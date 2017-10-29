@@ -2,7 +2,6 @@
 layout: page
 ---
 <div class="post">
-
   <header class="post-header">
     <p class="meta">
         {{ page.date | date: "%b %-d, %Y" }}
@@ -15,8 +14,5 @@ layout: page
   <article class="post-content">
   {{ content }}
   </article>
-	<p class="feed-recomendation">
-		Gostou do post? Assina o <a href="{{ site.baseurl }}feed/">feed</a> e seja leet!!
-	</p>
   {% include disqus.html %}
 </div>
