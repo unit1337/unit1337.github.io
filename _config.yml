@@ -1,7 +1,7 @@
 # Site settings
 title: "Unit1337"
 bye_message: "É nós que pwna hackudão!"
-baseurl: "http://unit1337.github.io/"
+baseurl: "/"
 url: "http://unit1337.github.io/"
 # disqus: gjuniioor
 
@@ -16,7 +16,6 @@ source_code:
 # blog:
 #     server: "wordpress.com"
 #     nick: "gjuniioor"
-# fingerprint_key: "5E12 9ABC C2A9 564B C048  2DF9 D327 0D10 BC71 CF75"
 
 # Build settings
 markdown: kramdown

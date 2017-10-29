@@ -2,7 +2,7 @@
 layout: content
 ---
 
-[https://unit1337.github.io/leet](https://unit1337.github.io/leet)
+[https://unit1337.github.io/](https://unit1337.github.io/)
 
 ### About
 
