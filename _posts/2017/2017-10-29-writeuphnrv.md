@@ -75,13 +75,13 @@ for numero in range(1, 665):
     except:
         continue
 for flag in resposta:
-    print(flag,end='')"
+    print(flag,end='')
 ```
 
 Lógico, para executar este script, você deve estar dentro da pasta com todos os arquivos em formato de hash. E só lembrando que os hashs são Sha1 e o valor dos hashs está entre 1 e 665(caso você não entenda bem sobre programação e não tenha lido o script).
 
 ##### Forensics
-######Domum(100)
+###### Domum(100)
 Nessa questão, apenas jogar o link da imagem no Google iria nos retornar informações para resolver a flag. É citado o fotógrafo Herbert List e uma coleção de álbuns, um deles cita “Italy. Sicily. Tuna fishing” e a cidade favignana, que é a flag.
 
 ###### Wallpaper(200)
@@ -93,14 +93,14 @@ Apenas uma análise a banco de dados SQLite3. Como o banco era bem grandinho, ut
 
 
 ##### Crypto
-######Hercules(300)
+###### Hercules(300)
 Na imagem dá pra notar que é grego. Com preguiça de transcrever, utilizamos um serviço de OCR Online e depois o Google Tradutor fez o resto.
 
 ###### Polska(200)
 Está cripto eu tive a ajuda do site Vigenere Brute que fez um bruteforce com as possíveis chaves para a cifra. Deixei um tempo rodando e acabei recebendo 500 resultados. Para capturar a flag, apenas dei um grep em ‘hnrv’ e achei no primeiro resultado, somente colocando a flag no padrão, pois o texto estava todo junto.
 
 ##### Reverse Eng.
-######Pointer(100)
+###### Pointer(100)
 
 Essa de engenharia reversa eu fiquei meio merda pois não conseguia entender aonde tava a flag no código, eu tinha um binário e um txt. No txt tinha várias frases e no binário eu supostamente passava uma linha do txt pro binário. E na verdade a flag era uma linha desse txt. Porém eu não sabia e fiquei tentando debugar o código tentando dumpar as variáveis e analisar o assembly pra ver se tinha algo que não era chamado. Acontece que tinha um hint dentro desse binário: “defcon calvin”
 
@@ -114,7 +114,7 @@ E descobri também que era sou(d34dr3b3l) 0 à esquerda em reverse, eu até cheg
 
 Essa challenge foi basicamente explorar o indexes, no diretório /img se não me engano e lá tinha dois arquivos, um deles tinha o nome praticamente igual com exceção do final ter um _1.jpeg. Eu baixei o arquivo e abri e a flag estava lá.
 
-######Noble Task(200)
+###### Noble Task(200)
 Esse desafio foi louco, no site tinha um robots.txt que dava em dois arquivos, um deles continha as credenciais e o outro era a área restrita do website.
 Porém não dava para logar, depois de certo tempo, voltei a analisar os arquivos e sem ideia comecei a pesquisar sobre o login “lipemob” nas redes socais devido a hints da staff do evento. Eu pensei em codar um script em python mas achei que ia ser perda de tempo, fiz manual com uma dork, eu só ia substituindo o “site” pela rede social de uma lista que eu elaborei, o engraçado é que eu tive que googlar “redes sociais” porquê não conheço todas, KK vi que uma delas é a rede social do baidu(?), mas voltando ao assunto, dork segue abaixo:
 
