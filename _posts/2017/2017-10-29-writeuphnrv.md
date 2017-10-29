@@ -8,6 +8,7 @@ tags:
     - hacking
     - CTF
 ---
+
 ### Hacking And Roll V
 
 Er, então, esse é um paper-writeup e eu inventei esse termo agora mas já deveria existir antes, jogamos(Unit1337) o HNRV, foi um evento de 24h começando as 13:37 de sábado. Nosso ápice foi o 3º lugar que alcançamos por volta de umas 5h da manhã, mas fomos ultrapassados e finalizamos o campeonato em 5º. Foi o primeiro CTF oficial da Unit1337, eu achei que seriamos massacrados mas não foi tão ruim. Bom, vamos aos bag técnico.
@@ -75,8 +76,8 @@ for numero in range(1, 665):
         continue
 for flag in resposta:
     print(flag,end='')"
-
 ```
+
 Lógico, para executar este script, você deve estar dentro da pasta com todos os arquivos em formato de hash. E só lembrando que os hashs são Sha1 e o valor dos hashs está entre 1 e 665(caso você não entenda bem sobre programação e não tenha lido o script).
 
 ##### Forensics
