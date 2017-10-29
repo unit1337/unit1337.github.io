@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Codes"
-permalink: /bin
+permalink: /bin/
 ---
 
 # Coding and Codes
