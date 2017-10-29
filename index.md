@@ -6,19 +6,10 @@ layout: content
 
 ### About
 
-It's just one more [jekyll](https://github.com/jekyll/jekyll) theme. Maybe it's has some appearance like a linux console. :)
+Um grupo de usuários de ritalina que curte CyberSec.
 
-[Bootstrap](http://getbootstrap.com/) was added to turn responsible. Thanks, [@magnunleno](https://github.com/magnunleno).
 
-### Features
+### Projetos
 
-- [x] Google analytics
-- [x] Disqus
-- [x] Responsible
-- [x] Highlights for code
-
-### Characteristics
-
-- [x] Customized (and nice :P) 404 page
-- [x] Friendly to read
-- [x] Simple
+- OutFlag = { 'Projeto de CTF para universidades' }
+- CodingDojo = { 'Luta livre de código' }
