@@ -3,7 +3,6 @@ layout: page
 title: "OutFlag"
 permalink: /CTF/
 ---
-### OutFlag
 
 OutFlag é um projeto que visa disseminar a cultura de cybersegurança(cyberpunk) atráves de capture the flags(CTF), organizamos eventos sem fins lucrativos para instituições de ensino que tenham interesse no projeto. A ideía é mostrar a faceta da segurança da Informação para os alunos e dar uma noção de “pensar fora da caixa” que todo hacker precisa ter.
 
