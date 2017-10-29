@@ -1,12 +1,12 @@
 ---
 layout: post
-title:	"Localhost"
+title:	"HNRV - Write Up"
 date:	2017-10-29 06:00:00
 categories:
     - blog
 tags:
     - hacking
-    - linux
+    - CTF
 ---
 ### Hacking And Roll V
 
