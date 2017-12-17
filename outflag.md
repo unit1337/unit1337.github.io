@@ -19,5 +19,5 @@ Caso queira um evento de CTF sob demanda na sua instituição ou até mesmo nos 
 4non_47 *arroba* protonmail [ dot ] ch
 
 Quer saber mais? Consulte os links abaixo!
-[CTF TIME](https://ctftime.org/)
-[CTF-BR](https://ctf-br.org/sobre/)
+- [CTF TIME](https://ctftime.org/)
+- [CTF-BR](https://ctf-br.org/sobre/)
