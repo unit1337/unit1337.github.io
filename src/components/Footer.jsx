@@ -22,7 +22,7 @@ export default class Footer extends React.Component {
 				<div className="w-100 ph3 pv5 bg-black-80">
 					<a
 						className="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2"
-						href="https://github.com/vandalvnl"
+						href="https://github.com/unit1337"
 						title="GitHub"
 					>
 						<svg

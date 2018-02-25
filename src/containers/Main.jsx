@@ -1,6 +1,9 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import tron from '../assets/tron.jpg';
+import dead from '../assets/deadrebel.jpg';
+import design from '../assets/design.png';
 
 export default class Main extends React.Component {
 	constructor(props) {
@@ -26,8 +29,7 @@ export default class Main extends React.Component {
 								<article className="hide-child relative ba b--black-20 mw5 center">
 									<a
 										style={{
-											backgroundImage:
-												'url(https://orig00.deviantart.net/e145/f/2013/153/d/d/deadpool_button_design_by_fonteart-d67l01u.png)'
+											backgroundImage: `url(${tron})`
 										}}
 										className="link mw5 dt db hide-child br2 cover bg-center center"
 									>
@@ -35,7 +37,7 @@ export default class Main extends React.Component {
 									</a>
 									<div className="pa2 bt b--black-20">
 										<a className="f6 db link dark-green hover-blue" href="#">
-											Whoarei
+											7r0n
 										</a>
 										<p className="f6 gray mv1">The Hacker</p>
 									</div>
@@ -47,8 +49,7 @@ export default class Main extends React.Component {
 								<article className="hide-child relative ba b--black-20 mw5 center">
 									<a
 										style={{
-											backgroundImage:
-												'url(https://orig00.deviantart.net/e145/f/2013/153/d/d/deadpool_button_design_by_fonteart-d67l01u.png)'
+											backgroundImage: `url(${dead})`
 										}}
 										className="link mw5 dt db hide-child br2 cover bg-center center"
 									>
@@ -56,9 +57,9 @@ export default class Main extends React.Component {
 									</a>
 									<div className="pa2 bt b--black-20">
 										<a className="f6 db link dark-green hover-blue" href="#">
-											AfterByte
+											D34dReb3l
 										</a>
-										<p className="f6 gray mv1">The Developer</p>
+										<p className="f6 gray mv1">The Hacker</p>
 									</div>
 								</article>
 							</section>
@@ -68,8 +69,7 @@ export default class Main extends React.Component {
 								<article className="hide-child relative ba b--black-20 mw5 center">
 									<a
 										style={{
-											backgroundImage:
-												'url(https://orig00.deviantart.net/e145/f/2013/153/d/d/deadpool_button_design_by_fonteart-d67l01u.png)'
+											backgroundImage: `url(${design})`
 										}}
 										className="link mw5 dt db hide-child br2 cover bg-center center"
 									>
@@ -77,9 +77,9 @@ export default class Main extends React.Component {
 									</a>
 									<div className="pa2 bt b--black-20">
 										<a className="f6 db link dark-green hover-blue" href="#">
-											J0hnW1ck
+											Pl3xu5
 										</a>
-										<p className="f6 gray mv1">The Design</p>
+										<p className="f6 gray mv1">The Designer</p>
 									</div>
 								</article>
 							</section>

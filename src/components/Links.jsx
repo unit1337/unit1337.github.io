@@ -29,7 +29,7 @@ export default class Links extends React.Component {
 					<Link className="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" to="/outflag">
 						CodingDojo
 					</Link>
-					<Link className="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" to="/outflag">
+					<Link className="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" to="/projects">
 						Projects
 					</Link>
 				</div>
