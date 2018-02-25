@@ -6,6 +6,7 @@ import './styles/index.css';
 import Main from './containers/Main';
 import Projects from './containers/Projects';
 import OutFlag from './containers/Outflag';
+import Patrocinadores from './containers/Patrocinadores';
 import registerServiceWorker from './registerServiceWorker';
 
 const Routes = () => (
@@ -15,6 +16,7 @@ const Routes = () => (
 				<Route exact path="/" component={Main} />
 				<Route exact path="/outflag" component={OutFlag} />
 				<Route exact path="/projects" component={Projects} />
+				<Route exact path="/patrocinadores" component={Patrocinadores} />
 			</Switch>
 		</div>
 	</Router>

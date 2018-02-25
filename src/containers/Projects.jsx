@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/NavbarWithoutImg';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
+import ctif1 from '../assets/ctif.jpg';
 
 export default class OutFlag extends React.Component {
 	constructor(props) {
@@ -28,71 +29,35 @@ export default class OutFlag extends React.Component {
 						</p>
 					</div>
 
-					<div className="cf pa2">
-						<div className="fl w-50 w-25-m w-20-l pa2">
-							<a
-								href="http://cohenwoodworking.com/wp-content/uploads/2016/09/image-placeholder-500x500.jpg"
-								target="_blank"
-								className="db link dim tc"
-							>
-								<img
-									src="http://cohenwoodworking.com/wp-content/uploads/2016/09/image-placeholder-500x500.jpg"
-									className="w-100 db outline black-10"
-								/>
-								<dl className="mt2 f6 lh-copy">
-									<dd className="ml0 white truncate w-100">23/03/2018 - 13:37</dd>
-									<dd className="ml0 white truncate w-100">OutFlag - CTiF 4ª Edição</dd>
-								</dl>
+					<div className="cf pa2 mw6 center">
+						<article>
+							<a class="link dt w-100 bb b--white-10 pb2 mt2 blue" href="#0">
+								<div class="dtc w4">
+									<img src={ctif1} class="db w-100" />
+								</div>
+								<div class="dtc v-top pl2">
+									<h1 class="f6 f5-ns fw6 lh-title white mv0">CTiF v4</h1>
+									<h2 class="f6 fw4 mt2 mb0 white-60">Será realizado no dia 23/03/2018</h2>
+									<dl class="mt2 f6">
+										<dd class="ml0 gray">Equipe vencedora: -----</dd>
+									</dl>
+								</div>
 							</a>
-						</div>
-						<div className="fl w-50 w-25-m w-20-l pa2">
-							<a href="" className="db link dim tc">
-								<img
-									src="http://cohenwoodworking.com/wp-content/uploads/2016/09/image-placeholder-500x500.jpg"
-									className="w-100 db outline black-10"
-								/>
-								<dl className="mt2 f6 lh-copy">
-									<dd className="ml0 white truncate w-100">23/03/2018 - 13:37</dd>
-									<dd className="ml0 white truncate w-100">OutFlag - CTiF 4ª Edição</dd>
-								</dl>
+						</article>
+						<article>
+							<a class="link dt w-100 bb b--white-10 pb2 mt2 blue" href="#0">
+								<div class="dtc w4">
+									<img src={ctif1} class="db w-100" />
+								</div>
+								<div class="dtc v-top pl2">
+									<h1 class="f6 f5-ns fw6 lh-title white mv0">CTiF v2</h1>
+									<h2 class="f6 fw4 mt2 mb0 white-60">Realizado no dia 19/07/2017</h2>
+									<dl class="mt2 f6">
+										<dd class="ml0 gray">Equipe vencedora: 4 pokemóns perdidos</dd>
+									</dl>
+								</div>
 							</a>
-						</div>
-						<div className="fl w-50 w-25-m w-20-l pa2">
-							<a href="" className="db link dim tc">
-								<img
-									src="http://cohenwoodworking.com/wp-content/uploads/2016/09/image-placeholder-500x500.jpg"
-									className="w-100 db outline black-10"
-								/>
-								<dl className="mt2 f6 lh-copy">
-									<dd className="ml0 white truncate w-100">23/03/2018 - 13:37</dd>
-									<dd className="ml0 white truncate w-100">OutFlag - CTiF 4ª Edição</dd>
-								</dl>
-							</a>
-						</div>
-						<div className="fl w-50 w-25-m w-20-l pa2">
-							<a href="" className="db link dim tc">
-								<img
-									src="http://cohenwoodworking.com/wp-content/uploads/2016/09/image-placeholder-500x500.jpg"
-									className="w-100 db outline black-10"
-								/>
-								<dl className="mt2 f6 lh-copy">
-									<dd className="ml0 white truncate w-100">23/03/2018 - 13:37</dd>
-									<dd className="ml0 white truncate w-100">OutFlag - CTiF 4ª Edição</dd>
-								</dl>
-							</a>
-						</div>
-						<div className="fl w-50 w-25-m w-20-l pa2">
-							<a href="" className="db link dim tc">
-								<img
-									src="http://cohenwoodworking.com/wp-content/uploads/2016/09/image-placeholder-500x500.jpg"
-									className="w-100 db outline black-10"
-								/>
-								<dl className="mt2 f6 lh-copy">
-									<dd className="ml0 white truncate w-100">23/03/2018 - 13:37</dd>
-									<dd className="ml0 white truncate w-100">OutFlag - CTiF 4ª Edição</dd>
-								</dl>
-							</a>
-						</div>
+						</article>
 					</div>
 				</div>
 				<Footer />

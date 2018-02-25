@@ -20,7 +20,7 @@ export default class Navbar extends React.Component {
 					style={{ backgroundImage: 'url(https://i.redd.it/oenwl8eze40y.jpg)' }}
 				>
 					<div className="bg-black-70 pb6 pb6-m pb6-l">
-						<nav className="dt w-100 mw8 center">
+						<nav className="dt w-100 mw8 center ">
 							<Links />
 						</nav>
 						<div className="tc-l mt6 mt6-m mt6-l ph3">
