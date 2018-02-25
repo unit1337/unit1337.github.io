@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import PatrocinioList from '../components/PatrocinioList';
 import tron from '../assets/tron.jpg';
 import dead from '../assets/deadrebel.jpg';
 import design from '../assets/design.png';
@@ -83,6 +84,16 @@ export default class Main extends React.Component {
 									</div>
 								</article>
 							</section>
+						</div>
+					</div>
+					<div className="fl w-100">
+						<div className="pt2 mt2">
+							<h2 className="tc f1 lh-title white center">
+								<strong>Patrocinadores</strong>
+							</h2>
+							<div className="center mw7">
+								<PatrocinioList />
+							</div>
 						</div>
 					</div>
 				</div>

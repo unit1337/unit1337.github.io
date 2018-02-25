@@ -25,7 +25,7 @@ export default class Navbar extends React.Component {
 						</nav>
 						<div className="tc-l mt6 mt6-m mt6-l ph3">
 							<h1 className="f2 f1-l fw2 white-90 mb0 lh-title">
-								<strong>Fucking Awesome CTF Team</strong>
+								<strong>Awesome CTF Team</strong>
 							</h1>
 							<h2 className="fw1 f3 white-80 mt3 mb4">
 								<strong>Unit1337, We are Leet</strong>
