@@ -20,7 +20,7 @@ export default class PatrocinioList extends React.Component {
 						</div>
 						<div className="dtc v-top pl2">
 							<h1 className="f6 f5-ns fw6 lh-title white mv0">Grupo Comp Soluções</h1>
-							<h2 className="f6 fw4 mt2 mb0 white-60">Grupo de treinamento</h2>
+							<h2 className="f6 fw4 mt2 mb0 white-60">Soluções em T.I</h2>
 						</div>
 					</a>
 				</article>
@@ -37,6 +37,17 @@ export default class PatrocinioList extends React.Component {
 							<h2 className="f6 fw4 mt2 mb0 white-60">
 								Empresa de projetos OpenSource, fornecedora da nossa plataforma de CTF
 							</h2>
+						</div>
+					</a>
+				</article>
+				<article>
+					<a className="link dt w-100 bb b--white-10 pb2 mt2 blue" href="#0">
+						<div className="dtc w4">
+							<img src="https://indicca.com.br//wp-content/uploads/2017/12/logotipo-indicca.png" className="bg-white db w-100" />
+						</div>
+						<div className="dtc v-top pl2">
+							<h1 className="f6 f5-ns fw6 lh-title white mv0">Indicca</h1>
+							<h2 className="f6 fw4 mt2 mb0 white-60">Conectando sua rede ao mundo com segurança!</h2>
 						</div>
 					</a>
 				</article>

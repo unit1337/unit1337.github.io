@@ -32,8 +32,8 @@ export default class OutFlag extends React.Component {
 					<div className="cf pa2 mw6 center">
 						<article>
 							<a class="link dt w-100 bb b--white-10 pb2 mt2 blue" href="#0">
-								<div class="dtc w4">
-									<img src={ctif1} class="db w-100" />
+								<div class="dtc w4 f1 center">
+									<i className="fa fa-flag center db w-100 f1 center white grow-large" />
 								</div>
 								<div class="dtc v-top pl2">
 									<h1 class="f6 f5-ns fw6 lh-title white mv0">CTiF v4</h1>
@@ -47,7 +47,7 @@ export default class OutFlag extends React.Component {
 						<article>
 							<a class="link dt w-100 bb b--white-10 pb2 mt2 blue" href="#0">
 								<div class="dtc w4">
-									<img src={ctif1} class="db w-100" />
+									<img src={ctif1} class="grow db w-100" />
 								</div>
 								<div class="dtc v-top pl2">
 									<h1 class="f6 f5-ns fw6 lh-title white mv0">CTiF v2</h1>

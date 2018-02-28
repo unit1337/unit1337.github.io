@@ -22,11 +22,28 @@ export default class OutFlag extends React.Component {
 					</h2>
 					<div className="w-75 center">
 						<p className="tj">
-							OutFlag é um projeto de CTF. CTF significa Capture the Flag, caso você não saiba, CTF's são como
-							olimpiadas para os hackers, existem dois tipos de CTF, Jeopardy e Attack/Defense, o primeiro é semelhante
-							à quiz, uma plataforma composta de vários desafios das áreas de cybersegurança, Forense Computacional,
-							Criptografia, Pentest Web e outras tantas. A segunda é algo mais insano onde equipes se enfrentam em
-							servidores reais, onde cada equipe precisa atacar o ambiente das equipes adversárias e defender o próprio.
+							Minha jornada em cybersegurança começou quando participei de um Capture The Flag, CTF são como se fosse as
+							Olimpiadas para os Hackers. Eu era só um lammer e naquele dia não fiz muito mais do que apenas assistir
+							mas isso não me desmotivou, continuei lendo, estudando e participando de campeonatos de CTF e hoje eu
+							tenho skills suficientes para não simplesmente ficar apenas assistindo. Pensando um pouco sobre como um
+							campeonato de CTF mudou a perpectiva da minha vida eu tive a ideia de tentar incentivar outras pessoas da
+							mesma forma através de campeonatos de CTF. Existem dois tipos de CTF:{' '}
+							<ul>
+								<li>
+									Jeopardy Style e Attack/Defense, o primeiro é semelhante à quiz, uma plataforma composta de vários
+									desafios das áreas de cybersegurança, Forense Computacional, Criptografia, Pentest Web e outras
+									tantas.
+								</li>
+								<li>
+									A segunda é algo mais insano onde equipes se enfrentam em servidores reais com vulnerabilidades
+									implantadas que precisam ser corrigidas enquanto os seus adversários tentam entrar e vice versa.
+								</li>
+							</ul>{' '}
+							Agora o 0utFl4g é o nome do evento que nós da Unit1337 criamos, um evento de CTF. No momento estamos
+							próximos de ter realizado 5 edições, abaixo segue as universidades que nós já passamos, {' '}
+							<strong>IF Sudeste MG - Campus JF</strong>, <strong>Estacio Polo Rio Branco</strong> Todos nossos eventos são sem fins
+							lucrativos visando apenas na disseminação do entretenimento. Claro que precisamos de infraestrutura para
+							rodar o evento, infraestrutura qual deve ser fornecida pela Instituição.
 						</p>
 					</div>
 
