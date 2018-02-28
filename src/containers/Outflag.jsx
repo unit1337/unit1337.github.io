@@ -40,9 +40,12 @@ export default class OutFlag extends React.Component {
 								</li>
 							</ul>{' '}
 							Agora o 0utFl4g é o nome do evento que nós da Unit1337 criamos, um evento de CTF. No momento estamos
-							próximos de ter realizado 5 edições, abaixo segue as universidades que nós já passamos, {' '}
-							<strong>IF Sudeste MG - Campus JF</strong>, <strong>Estacio Polo Rio Branco</strong> Todos nossos eventos são sem fins
-							lucrativos visando apenas na disseminação do entretenimento. Claro que precisamos de infraestrutura para
+							próximos de ter realizado 5 edições, abaixo segue as universidades que nós já passamos:
+							<ul>
+								<li><strong>IF Sudeste MG - Campus JF</strong></li>
+								<li><strong>Estacio Polo Rio Branco</strong></li>
+							</ul>
+							Todos nossos eventos são sem fins lucrativos visando apenas na disseminação do entretenimento. Claro que precisamos de infraestrutura para
 							rodar o evento, infraestrutura qual deve ser fornecida pela Instituição.
 						</p>
 					</div>
