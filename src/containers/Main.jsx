@@ -20,12 +20,12 @@ export default class Main extends React.Component {
 		return (
 			<div>
 				<Navbar />
-				<div className="cf ph2-ns">
+				<div className="cf ph0-ns">
 					<div className="fl w-100">
-						<h2 className="tc f1 lh-title white center">
+						<h2 className="tc f2 lh-title white center">
 							<strong>Our Team</strong>
 						</h2>
-						<div className="fl w-third">
+						<div className="fl w-100 w-third-m w-third-l">
 							<section className="tc pa1 pa1-ns">
 								<article className="hide-child relative ba b--black-20 mw5 center">
 									<a
@@ -45,7 +45,7 @@ export default class Main extends React.Component {
 								</article>
 							</section>
 						</div>
-						<div className="fl w-third">
+						<div className="fl w-100 w-third-m w-third-l">
 							<section className="tc pa1 pa1-ns">
 								<article className="hide-child relative ba b--black-20 mw5 center">
 									<a
@@ -65,7 +65,7 @@ export default class Main extends React.Component {
 								</article>
 							</section>
 						</div>
-						<div className="fl w-third">
+						<div className="fl w-100 w-third-m w-third-l">
 							<section className="tc pa1 pa1-ns">
 								<article className="hide-child relative ba b--black-20 mw5 center">
 									<a
@@ -86,9 +86,9 @@ export default class Main extends React.Component {
 							</section>
 						</div>
 					</div>
-					<div className="fl w-100">
+					<div className="fl w-100 w-100-m w-100-l">
 						<div className="pt2 mt2">
-							<h2 className="tc f1 lh-title white center">
+							<h2 className="tc f2 lh-title white center">
 								<strong>Patrocinadores</strong>
 							</h2>
 							<div className="center mw7">

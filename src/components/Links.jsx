@@ -13,33 +13,32 @@ export default class Links extends React.Component {
 
 	render() {
 		return (
-			<div className="bg-black-50">
-				<div className="dtc w2 v-mid pa3">
-					<Link to="/" className="dib w2 h2 pa1 grow-large border-box">
-						<i className="fa fa-flag white" />
+			<header class="bg-black-70 fixed w-100 ph3 pv2 pv2-ns ph4-m ph5-l">
+				<nav class="f6 fw6 ttu tracked">
+					<Link className="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3 dib mr1 link dim" to="/">
+						<i className="fa fa-flag" />
 					</Link>
-				</div>
-				<div className="dtc v-mid tr pa3 w-100">
-					<Link className="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" to="/">
-						Home
-					</Link>
-					<Link className="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" to="/outflag">
+					<Link className="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3 dib mr1 link dim" to="/outflag">
 						OutFlag
 					</Link>
-					<Link className="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" to="/outflag">
-						Writeups
-					</Link>
-					<Link className="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" to="/outflag">
-						CodingDojo
-					</Link>
-					<Link className="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" to="/projects">
-						Projetos
-					</Link>
-					<Link className="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" to="/patrocinadores">
+					<div class="dropdown white dib mr1">
+						<Link className="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3 dib mr1 link dim" to="/projects">
+							Projetos
+						</Link>
+						<div class="dropdown-content">
+							<p className="white hover-green pointer ml3 bg-hover-black pv2 ph2">Hello World!</p>
+							{/* <p className="white hover-green pointer bg-hover-black pv2 ph2 ml3">Hello World!</p> */}
+							{/* <p className="white hover-green pointer ml3 bg-hover-black pv2 ph2">Hello World!</p> */}
+						</div>
+					</div>
+					<Link
+						className="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3 dib mr1 link dim"
+						to="/patrocinadores"
+					>
 						Patrocinadores
 					</Link>
-				</div>
-			</div>
+				</nav>
+			</header>
 		);
 	}
 }

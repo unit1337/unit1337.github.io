@@ -20,7 +20,7 @@ export default class Navbar extends React.Component {
 					style={{ backgroundImage: 'url(https://i.redd.it/oenwl8eze40y.jpg)' }}
 				>
 					<div className="bg-black-70 pb6 pb6-m pb6-l">
-						<nav className="dt w-100 mw8 center ">
+						<nav className="dt w-100 w-100-m w-100-l center">
 							<Links />
 						</nav>
 						<div className="tc-l mt6 mt6-m mt6-l ph3">
@@ -31,10 +31,10 @@ export default class Navbar extends React.Component {
 								<strong>Unit1337, We are Leet</strong>
 							</h2>
 							<Link className="f6 no-underline grow dib v-mid bg-blue white ba b--blue ph3 pv2 mb3" to="/">
-								<i className="fa fa-music white" /> Your Playlist
+								<i className="fa fa-music white" /> Our Playlist
 							</Link>
 							<span className="dib v-mid ph3 white-70 mb3">or</span>
-							<a className="f6 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3" to="">
+							<a className="f6 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3" href="https://github.com/unit1337">
 								<i className="fab fa-github white" /> Github
 							</a>
 						</div>
