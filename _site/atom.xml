@@ -4,7 +4,7 @@
  <title>Unit1337</title>
  <link href="http://0.0.0.0:80/atom.xml" rel="self"/>
  <link href="http://0.0.0.0:80/"/>
- <updated>2018-05-19T15:27:36+00:00</updated>
+ <updated>2018-05-19T16:01:56+00:00</updated>
  <id>http://0.0.0.0:80</id>
  <author>
    <name>Karlo Espiritu</name>
@@ -17,7 +17,7 @@
    <link href="http://0.0.0.0:80/2018/05/19/outflag5.html"/>
    <updated>2018-05-19T00:00:00+00:00</updated>
    <id>http://0.0.0.0:80/2018/05/19/outflag5</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;./images/outflag5/Banner.jpeg&quot; alt=&quot;Scoreboard&quot; /&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/images/outflag5/Banner.jpeg&quot; alt=&quot;Scoreboard&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;evento&quot;&gt;Evento&lt;/h2&gt;
 &lt;p&gt;O evento foi realizado no IFET no dia 23/03/2018, teve um total de 20 participantes resultando em 5 equipes. Foi o maior número de participantes que nós já tivemos competindo. Esse evento também foi o que tivemos uma melhor infraestrutura contando com servidor cedido pela Instituição e o emprego de Containers Docker.&lt;/p&gt;
 
@@ -32,7 +32,7 @@
   &lt;li&gt;4x DigitalSpark ( RubberDuck Project )&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;./images/outflag5/premiacao.jpeg&quot; alt=&quot;Premios&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![Premios]/images/outflag5/premiacao.jpeg)&lt;/p&gt;
 
 &lt;h2 id=&quot;preparação&quot;&gt;Preparação&lt;/h2&gt;
 &lt;p&gt;Os preparativos para a quinta edição de CTF foram da nossa forma habitual, nossa equipe se reúne em um fim de semana, temos um brainstorm, analisamos nossas ideias de challenges descartamos umas e melhoramos outras e então documentamos. Definimos uma deadline para preparar tudo. Passamos os dias seguintes subindo challenges pro nosso repositório secreto e documentamos técnicamente cada challenge.&lt;/p&gt;
@@ -120,7 +120,7 @@
 &lt;p&gt;O score estava disputado, chegando ter três equipes empatadas ao mesmo tempo, abaixo segue a ordem de resolução das challenges e as respecticas equipes:&lt;/p&gt;
 
 &lt;p&gt;Algo que vale ressaltar é que a challengeImpapa já foi ofertada em duas edições anteriores e nunca tinha sido resolvida e vinha sendo reciclada, temos então o FirstBlood pra equipe FIKPR4PROXIMA que matou essa challenge!
-&lt;img src=&quot;./images/outflag5/firstblood.jpeg&quot; alt=&quot;firstblood&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/outflag5/firstblood.jpeg&quot; alt=&quot;firstblood&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;A challenge mais insana e realistica não foi abatida,”Roses are red and Micro$oft are Blue”, é uma pena, eu queria muito ver alguém destruindo aquele Windows…&lt;/p&gt;
 
@@ -133,10 +133,10 @@
 &lt;p&gt;A equipe vencedora foi a Alpha. A maioria dos integrantes da Alpha já jogou CTF, levaram então todos aqueles prêmios para casa. Parabéns Alpha!!&lt;/p&gt;
 
 &lt;p&gt;ScoreBoard final:
-&lt;img src=&quot;./images/outflag5/scoreboard.png&quot; alt=&quot;Scoreboard&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/outflag5/scoreboard.png&quot; alt=&quot;Scoreboard&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Equipe Alpha:
-&lt;img src=&quot;./images/outflag5/winners.jpeg&quot; alt=&quot;Alpha&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/outflag5/winners.jpeg&quot; alt=&quot;Alpha&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;EOF&lt;/p&gt;
 </content>
