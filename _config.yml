@@ -6,7 +6,7 @@ highlighter:      rouge
 title:            Unit1337
 tagline:          HackerSpace
 description:      "HackerSpace"
-url:              https://github.com/karloespiritu/blackdoc
+url:              https://unit1337.github.io/
 baseurl:          /
                   # the optional subpath of your site, e.g. "/my-jekyll-site/"
                   # This will apply to all pages in your Jekyll site.
