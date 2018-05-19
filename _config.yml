@@ -1,0 +1,35 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Setup
+title:            Unit1337
+tagline:          HackerSpace
+description:      "HackerSpace"
+url:              https://github.com/karloespiritu/blackdoc
+baseurl:          /
+                  # the optional subpath of your site, e.g. "/my-jekyll-site/"
+                  # This will apply to all pages in your Jekyll site.
+
+author:
+  name:           Karlo Espiritu
+  url:            https://twitter.com/karloespiritu
+
+paginate:         5
+# paginate_path:    '/page:num'
+                    # Or '/my-jekyll-site/page:num' if you want to move your index pages
+
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+
+# Custom vars
+version:            2.0.1
+
+github:
+  repo:             https://github.com/unit1337
+
+twitter:
+    url:            https://twitter.com/unit1337_
+

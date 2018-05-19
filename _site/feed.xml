@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://0.0.0.0/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0/" rel="alternate" type="text/html" /><updated>2018-05-19T15:27:36+00:00</updated><id>http://0.0.0.0/</id><title type="html">Unit1337</title><subtitle>HackerSpace</subtitle><author><name>Karlo Espiritu</name></author><entry><title type="html">0utFl4g 5 Edicao - Bastidores</title><link href="http://0.0.0.0/2018/05/19/outflag5.html" rel="alternate" type="text/html" title="0utFl4g 5 Edicao - Bastidores" /><published>2018-05-19T00:00:00+00:00</published><updated>2018-05-19T00:00:00+00:00</updated><id>http://0.0.0.0/2018/05/19/outflag5</id><content type="html" xml:base="http://0.0.0.0/2018/05/19/outflag5.html">&lt;p&gt;&lt;img src=&quot;./images/outflag5/Banner.jpeg&quot; alt=&quot;Scoreboard&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;evento&quot;&gt;Evento&lt;/h2&gt;
+&lt;p&gt;O evento foi realizado no IFET no dia 23/03/2018, teve um total de 20 participantes resultando em 5 equipes. Foi o maior número de participantes que nós já tivemos competindo. Esse evento também foi o que tivemos uma melhor infraestrutura contando com servidor cedido pela Instituição e o emprego de Containers Docker.&lt;/p&gt;
+
+&lt;p&gt;A quinta edição também contou com patrocinadores, sendo então a primeira edição com patrocinio o que resultou na primeira edição com premiação para a equipe que ficasse em primeiro colado. A premiação alcançou aproximadamente R$ 300,00 em itens.&lt;/p&gt;
+
+&lt;p&gt;Segue a relação de prêmios:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Teste de Invasão (Georgia Weidman)&lt;/li&gt;
+  &lt;li&gt;Pentest em aplicações Web Daniel Moren)&lt;/li&gt;
+  &lt;li&gt;BlackHat Python (Justin Seitz )&lt;/li&gt;
+  &lt;li&gt;Introdução a Análise Forense em redes de computadoresRicardo K. M. G.)&lt;/li&gt;
+  &lt;li&gt;4x DigitalSpark ( RubberDuck Project )&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;./images/outflag5/premiacao.jpeg&quot; alt=&quot;Premios&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;preparação&quot;&gt;Preparação&lt;/h2&gt;
+&lt;p&gt;Os preparativos para a quinta edição de CTF foram da nossa forma habitual, nossa equipe se reúne em um fim de semana, temos um brainstorm, analisamos nossas ideias de challenges descartamos umas e melhoramos outras e então documentamos. Definimos uma deadline para preparar tudo. Passamos os dias seguintes subindo challenges pro nosso repositório secreto e documentamos técnicamente cada challenge.&lt;/p&gt;
+
+&lt;h2 id=&quot;challenges&quot;&gt;Challenges&lt;/h2&gt;
+&lt;p&gt;O total de challenges elaboradas foram 17, contudo devido ao tempo curto de duração do evento e falta de demanda só 12 foram liberadas. Será abordado um overview sobre as challenges liberadas logo abaixo.&lt;/p&gt;
+
+&lt;h3 id=&quot;forense&quot;&gt;Forense:&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Forense Master(40): 
+    - Autor: r3bel
+    - Descrição: Foi criado um arquivo de 512Mb, formatado com FAT e então populamos essa partição com arquivos diversos e nonsense. No final das contas foi criado um diretório com vários subdiretórios.O arquivo da flag estava oculto no meio dos diretórios, uma vez localizado através de utilitários como o comando find, era necessário utilizar uma ferramenta de stenografia como o steghide e então extrair a flag.  ### Web:
+- PHPrague(80):
+    - Autor: 7r0n
+    - Descrição:Consistia no upload de um webshell em através de um formulário para subir imagens Nós misturamos um pouco de web com forense aqui, existiam dois vetores para entrar no servidor, um deles era através do ssh
+
+- ZipZop fail(110):
+    - Autor: 7r0n
+    - Descrição: Essa challenge foi baseada na vulnerabilidade do Whatsapp que envolve o Local Storage, porém como um hint. Para resolver era necessário acessar o servidor, então ele iria encaminhar os dados que seriam armazenados no LocalStorage da sua máquina, esses dados consistiam em uma chave RSA privada encodada em base64, essa chave seria utilizada para decriptar a flag, que estava em SessionStorage. 
+    - Papers:
+        - https://www.tra.gov.ae/userfiles/assets/wl33NGjeGX8.pdf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;misc&quot;&gt;Misc:&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Classic One(1):
+    - Autor:7r0n
+    - Descrição: Essa challenge é uma referência ao termo HACK THE PLANET, o jogador precisaria apenas completar a frase.
+
+- Low High(4)
+    - Autor: r3bel
+    - Descrição: Essa challenge é uma referência ao termo Cybe&quot;Low Life High Tech&quot;. O jogador precisaria apenas completar a frase.
+
+- Who am I(30):
+    - Autor: r3bel
+    - Descrição: Essa challenge é uma referência à definição de daemons segundo o perso&quot;Elliot&quot; do seriado Mr Robot. O jogador precisaria saber qual era o termo que a definição estava definindo.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;network&quot;&gt;Network:&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- FilesInsideWire(60):
+    - Autor: r3bel
+    - Descrição: Essa challenge consistia em uma amostra de tráfego FTP. No tráfego um usuário chamado lizabeth se conecta via FTP em um servidor e lista os arquivos e baixa um arquivo. Na lista dos arquivos do servidor FTP pode ser visto a flag. O jogador precisaria se conectar no mesmo servidor FTP com as credenciais interceptadas e realizar o download do arquivo correto, dentro desse arquivo ele encontraria a flag.
+
+- Recon(60):
+    - Autor: r3bel
+    - Descrição: Essa challenge exigia dos jogadores o emprego de portscanners e captura de banner de serviços. Foi deixado um programa em uma determinada porta que simulava um banner. Uma vez conectados nessa porta, utilizando o netcat por exemplo, o servidor te entregaria a flag com o banner. 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;ppcprofessional-programming-and-coding&quot;&gt;PPC(Professional Programming and Coding):&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Impapa(120):
+    - Autor:r3bel/7r0n
+    - Descrição: Essa challenge foi feita pelo r3bel e foi refatorada pelo 7r0n. Ela necessida que os jogadores saibam programação de sockets para comunicar com o servidor na porta que é informada no desafio. O desafio é bem simples, o servidor te dispara um número e você precisa responder ao servidor se esse número é impar ou par, depois de um determinado número de acertos, o servidor te encaminha a flag. 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;criptografia&quot;&gt;Criptografia:&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Hey Cabron(80):
+    - Autor: r3bel
+    - Descrição: Foi criado uma cifra utilizando a criptografia Übchi, para resolver você só precisava realizar uma pesquisa sobre tipos de criptografias empregadas pela Alemanha nas grandes guerras mundiais.  Depois de ter localizado a cifra, você ainda iria precisar da chave para descriptografar, a chave poderia ser encontrada realizando um bruteforce de acordo com os hints que foram fornecidos durante o campeonato.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;pwn&quot;&gt;Pwn:&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Roses are red and Micro$oft are Blue(150):
+    - Autor: r3bel
+    - Descrição: Nessa challenge foi criado uma VM que reproduz a falha ms17-010 da Microsoft. Para resolver você precisaria utilizar o exploit EtternalBlue. Uma vez com o exploit executado, você teria acesso administrativo no servidor, então iria encontrar a flag no diretório Documents do usuário user.
+
+
+
+- Do you &quot;manja&quot;(70):
+    - Autor:7r0n
+    - Descrição:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;infraestrutura&quot;&gt;Infraestrutura&lt;/h2&gt;
+&lt;p&gt;Nesse evento conseguimos um servidor apenas, e dentre todas as edições que tivemos, essa foi a única edição que conseguimos de fato equipamento pela Instituição. Geralmente temos que subir tudo em nossos notebooks.&lt;/p&gt;
+
+&lt;p&gt;No servidor cedido pela Instituição, foi instalado um Debian e teve suas configurações hardenizadas. Foi implementado o Docker para subir os containers. Ao total foram 7 containers docker. Foi a primeira edição que utilizamos esse tipo de estrutura isolada em containers, e sinceramente funcionou melhor do que esperado. Foi tão tranquilo que a carga de consumo do host que usamos como servidor Docker não passou de 15% em nenhum momento do evento.&lt;/p&gt;
+
+&lt;p&gt;Como foram 7 challenges, eu atribui uma interface virtual no servidor para utilizar outro endereço IP para poder separar as challenges de networking. Assim os scans e coisas do tipo não iriam ficar bagunçados por detectar portas de outras challenges.&lt;/p&gt;
+
+&lt;p&gt;Além dos containers docker, elaboramos uma challenge em VM, contendo um sistema Windows 7 x64 com uma vulnereabilidade referente ms17-010. Essa teve alguns problemas para nós. A principio ficaria no mesmo computador que estaria rodando a plataforma, porém, na hora de subir ela nesse computador, tivemos um kernel panic que levou ao sistema travar, causando a primeira indisponibilidade por queda da plataforma. Não satisfeitos, testamos 3 minutos mais tarde realizar o mesmo procedimento e então crashamos novamente causando a segunda e ultima indisponibilidade da plataforma tirando aqueles  problemas de mau contato do cabo de rede. Como dizia o físico, é insanidade  tentar obter um resultado diferente tentando a mesma coisa. Então eu subi a VM no meu próprio notebook. A VM teve que ser migrada horas mais tarde devidoeu ter que voltar ao meu trabalhoas 13h. Foi divertido ter que migrar isso, compactar a imagem usando aquele software primitivo zip que demorou oito mil ciclos computacionais e se mostrou ser menos eficiente que o gunzip. Depois disso, presenciei o primeiro erro do comando cp de falar que não pode copiar o arquivo porque é muito grande pra um pendrive(mesmo o pendrive tendo mais capacidade, provavelmente alguma coisa referente ao sistema de arquivos do pendrive, coisa da Microsoft e seus sistemas de arquivos medonhos), OK, então transferi pela rede para uma máquina do laboratório de informática e a migração foi realizada com sucesso.&lt;/p&gt;
+
+&lt;p&gt;Essa infraestrutura foi interessante pra nós, pois empregar o Docker para as challenges vai fazer com que mesmo com uma infraestrutura limitada possamos subir vários desafios em containers. Só não conseguimos por falta de tempo implementar um sistema de monitoração dos containers direto no host, passei a madrugada inteira antes do evento realizando testes porém não ficou algo válido para ser utilizado, então o monitoramento foi feito atráves dos utilitários do docker mesmo.&lt;/p&gt;
+
+&lt;h2 id=&quot;running&quot;&gt;Running:&lt;/h2&gt;
+&lt;p&gt;O desenrolar do evento foi tranquilo, ajudamos bastante os participantes com dicas e orientações. As equipes demonstraram um bom desempenho. Muitos participantes não tinham nenhuma experiência com CTF, inclusive a maioria estava rodando Windows. Isso foi até relativamente engraçado quando notei que uma das máquinas de um dos partipantes estava aplicando atualizações da Microsoft e deixou ele fora do jogo por uns 15~30 minutos.&lt;/p&gt;
+
+&lt;p&gt;O score estava disputado, chegando ter três equipes empatadas ao mesmo tempo, abaixo segue a ordem de resolução das challenges e as respecticas equipes:&lt;/p&gt;
+
+&lt;p&gt;Algo que vale ressaltar é que a challengeImpapa já foi ofertada em duas edições anteriores e nunca tinha sido resolvida e vinha sendo reciclada, temos então o FirstBlood pra equipe FIKPR4PROXIMA que matou essa challenge!
+&lt;img src=&quot;./images/outflag5/firstblood.jpeg&quot; alt=&quot;firstblood&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A challenge mais insana e realistica não foi abatida,”Roses are red and Micro$oft are Blue”, é uma pena, eu queria muito ver alguém destruindo aquele Windows…&lt;/p&gt;
+
+&lt;p&gt;Posteriomente ao evento o 7r0n apresentou a writeup de todas as challenges ofertadas no campeonato com o intuito de compartilhar conhecimento com os participantes.&lt;/p&gt;
+
+&lt;h2 id=&quot;patrocinadores&quot;&gt;Patrocinadores&lt;/h2&gt;
+&lt;p&gt;Gostaria de agradecer novamente nossos patrocinadores: Indicca.com e Grupocomp por acreditarem no nosso trabalho e terem contribuido com o evento.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusão&quot;&gt;Conclusão&lt;/h2&gt;
+&lt;p&gt;A equipe vencedora foi a Alpha. A maioria dos integrantes da Alpha já jogou CTF, levaram então todos aqueles prêmios para casa. Parabéns Alpha!!&lt;/p&gt;
+
+&lt;p&gt;ScoreBoard final:
+&lt;img src=&quot;./images/outflag5/scoreboard.png&quot; alt=&quot;Scoreboard&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Equipe Alpha:
+&lt;img src=&quot;./images/outflag5/winners.jpeg&quot; alt=&quot;Alpha&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;EOF&lt;/p&gt;</content><author><name>Karlo Espiritu</name></author><summary type="html">Evento O evento foi realizado no IFET no dia 23/03/2018, teve um total de 20 participantes resultando em 5 equipes. Foi o maior número de participantes que nós já tivemos competindo. Esse evento também foi o que tivemos uma melhor infraestrutura contando com servidor cedido pela Instituição e o emprego de Containers Docker. A quinta edição também contou com patrocinadores, sendo então a primeira edição com patrocinio o que resultou na primeira edição com premiação para a equipe que ficasse em primeiro colado. A premiação alcançou aproximadamente R$ 300,00 em itens. Segue a relação de prêmios: Teste de Invasão (Georgia Weidman) Pentest em aplicações Web Daniel Moren) BlackHat Python (Justin Seitz ) Introdução a Análise Forense em redes de computadoresRicardo K. M. G.) 4x DigitalSpark ( RubberDuck Project ) Preparação Os preparativos para a quinta edição de CTF foram da nossa forma habitual, nossa equipe se reúne em um fim de semana, temos um brainstorm, analisamos nossas ideias de challenges descartamos umas e melhoramos outras e então documentamos. Definimos uma deadline para preparar tudo. Passamos os dias seguintes subindo challenges pro nosso repositório secreto e documentamos técnicamente cada challenge. Challenges O total de challenges elaboradas foram 17, contudo devido ao tempo curto de duração do evento e falta de demanda só 12 foram liberadas. Será abordado um overview sobre as challenges liberadas logo abaixo. Forense: - Forense Master(40): - Autor: r3bel - Descrição: Foi criado um arquivo de 512Mb, formatado com FAT e então populamos essa partição com arquivos diversos e nonsense. No final das contas foi criado um diretório com vários subdiretórios.O arquivo da flag estava oculto no meio dos diretórios, uma vez localizado através de utilitários como o comando find, era necessário utilizar uma ferramenta de stenografia como o steghide e então extrair a flag. ### Web: - PHPrague(80): - Autor: 7r0n - Descrição:Consistia no upload de um webshell em através de um formulário para subir imagens Nós misturamos um pouco de web com forense aqui, existiam dois vetores para entrar no servidor, um deles era através do ssh - ZipZop fail(110): - Autor: 7r0n - Descrição: Essa challenge foi baseada na vulnerabilidade do Whatsapp que envolve o Local Storage, porém como um hint. Para resolver era necessário acessar o servidor, então ele iria encaminhar os dados que seriam armazenados no LocalStorage da sua máquina, esses dados consistiam em uma chave RSA privada encodada em base64, essa chave seria utilizada para decriptar a flag, que estava em SessionStorage. - Papers: - https://www.tra.gov.ae/userfiles/assets/wl33NGjeGX8.pdf Misc: - Classic One(1): - Autor:7r0n - Descrição: Essa challenge é uma referência ao termo HACK THE PLANET, o jogador precisaria apenas completar a frase. - Low High(4) - Autor: r3bel - Descrição: Essa challenge é uma referência ao termo Cybe&quot;Low Life High Tech&quot;. O jogador precisaria apenas completar a frase. - Who am I(30): - Autor: r3bel - Descrição: Essa challenge é uma referência à definição de daemons segundo o perso&quot;Elliot&quot; do seriado Mr Robot. O jogador precisaria saber qual era o termo que a definição estava definindo. Network: - FilesInsideWire(60): - Autor: r3bel - Descrição: Essa challenge consistia em uma amostra de tráfego FTP. No tráfego um usuário chamado lizabeth se conecta via FTP em um servidor e lista os arquivos e baixa um arquivo. Na lista dos arquivos do servidor FTP pode ser visto a flag. O jogador precisaria se conectar no mesmo servidor FTP com as credenciais interceptadas e realizar o download do arquivo correto, dentro desse arquivo ele encontraria a flag. - Recon(60): - Autor: r3bel - Descrição: Essa challenge exigia dos jogadores o emprego de portscanners e captura de banner de serviços. Foi deixado um programa em uma determinada porta que simulava um banner. Uma vez conectados nessa porta, utilizando o netcat por exemplo, o servidor te entregaria a flag com o banner. PPC(Professional Programming and Coding): - Impapa(120): - Autor:r3bel/7r0n - Descrição: Essa challenge foi feita pelo r3bel e foi refatorada pelo 7r0n. Ela necessida que os jogadores saibam programação de sockets para comunicar com o servidor na porta que é informada no desafio. O desafio é bem simples, o servidor te dispara um número e você precisa responder ao servidor se esse número é impar ou par, depois de um determinado número de acertos, o servidor te encaminha a flag. Criptografia: - Hey Cabron(80): - Autor: r3bel - Descrição: Foi criado uma cifra utilizando a criptografia Übchi, para resolver você só precisava realizar uma pesquisa sobre tipos de criptografias empregadas pela Alemanha nas grandes guerras mundiais. Depois de ter localizado a cifra, você ainda iria precisar da chave para descriptografar, a chave poderia ser encontrada realizando um bruteforce de acordo com os hints que foram fornecidos durante o campeonato. Pwn: - Roses are red and Micro$oft are Blue(150): - Autor: r3bel - Descrição: Nessa challenge foi criado uma VM que reproduz a falha ms17-010 da Microsoft. Para resolver você precisaria utilizar o exploit EtternalBlue. Uma vez com o exploit executado, você teria acesso administrativo no servidor, então iria encontrar a flag no diretório Documents do usuário user. - Do you &quot;manja&quot;(70): - Autor:7r0n - Descrição: Infraestrutura Nesse evento conseguimos um servidor apenas, e dentre todas as edições que tivemos, essa foi a única edição que conseguimos de fato equipamento pela Instituição. Geralmente temos que subir tudo em nossos notebooks. No servidor cedido pela Instituição, foi instalado um Debian e teve suas configurações hardenizadas. Foi implementado o Docker para subir os containers. Ao total foram 7 containers docker. Foi a primeira edição que utilizamos esse tipo de estrutura isolada em containers, e sinceramente funcionou melhor do que esperado. Foi tão tranquilo que a carga de consumo do host que usamos como servidor Docker não passou de 15% em nenhum momento do evento. Como foram 7 challenges, eu atribui uma interface virtual no servidor para utilizar outro endereço IP para poder separar as challenges de networking. Assim os scans e coisas do tipo não iriam ficar bagunçados por detectar portas de outras challenges. Além dos containers docker, elaboramos uma challenge em VM, contendo um sistema Windows 7 x64 com uma vulnereabilidade referente ms17-010. Essa teve alguns problemas para nós. A principio ficaria no mesmo computador que estaria rodando a plataforma, porém, na hora de subir ela nesse computador, tivemos um kernel panic que levou ao sistema travar, causando a primeira indisponibilidade por queda da plataforma. Não satisfeitos, testamos 3 minutos mais tarde realizar o mesmo procedimento e então crashamos novamente causando a segunda e ultima indisponibilidade da plataforma tirando aqueles problemas de mau contato do cabo de rede. Como dizia o físico, é insanidade tentar obter um resultado diferente tentando a mesma coisa. Então eu subi a VM no meu próprio notebook. A VM teve que ser migrada horas mais tarde devidoeu ter que voltar ao meu trabalhoas 13h. Foi divertido ter que migrar isso, compactar a imagem usando aquele software primitivo zip que demorou oito mil ciclos computacionais e se mostrou ser menos eficiente que o gunzip. Depois disso, presenciei o primeiro erro do comando cp de falar que não pode copiar o arquivo porque é muito grande pra um pendrive(mesmo o pendrive tendo mais capacidade, provavelmente alguma coisa referente ao sistema de arquivos do pendrive, coisa da Microsoft e seus sistemas de arquivos medonhos), OK, então transferi pela rede para uma máquina do laboratório de informática e a migração foi realizada com sucesso. Essa infraestrutura foi interessante pra nós, pois empregar o Docker para as challenges vai fazer com que mesmo com uma infraestrutura limitada possamos subir vários desafios em containers. Só não conseguimos por falta de tempo implementar um sistema de monitoração dos containers direto no host, passei a madrugada inteira antes do evento realizando testes porém não ficou algo válido para ser utilizado, então o monitoramento foi feito atráves dos utilitários do docker mesmo. Running: O desenrolar do evento foi tranquilo, ajudamos bastante os participantes com dicas e orientações. As equipes demonstraram um bom desempenho. Muitos participantes não tinham nenhuma experiência com CTF, inclusive a maioria estava rodando Windows. Isso foi até relativamente engraçado quando notei que uma das máquinas de um dos partipantes estava aplicando atualizações da Microsoft e deixou ele fora do jogo por uns 15~30 minutos. O score estava disputado, chegando ter três equipes empatadas ao mesmo tempo, abaixo segue a ordem de resolução das challenges e as respecticas equipes: Algo que vale ressaltar é que a challengeImpapa já foi ofertada em duas edições anteriores e nunca tinha sido resolvida e vinha sendo reciclada, temos então o FirstBlood pra equipe FIKPR4PROXIMA que matou essa challenge! A challenge mais insana e realistica não foi abatida,”Roses are red and Micro$oft are Blue”, é uma pena, eu queria muito ver alguém destruindo aquele Windows… Posteriomente ao evento o 7r0n apresentou a writeup de todas as challenges ofertadas no campeonato com o intuito de compartilhar conhecimento com os participantes. Patrocinadores Gostaria de agradecer novamente nossos patrocinadores: Indicca.com e Grupocomp por acreditarem no nosso trabalho e terem contribuido com o evento. Conclusão A equipe vencedora foi a Alpha. A maioria dos integrantes da Alpha já jogou CTF, levaram então todos aqueles prêmios para casa. Parabéns Alpha!! ScoreBoard final: Equipe Alpha: EOF</summary></entry><entry><title type="html">WriteUp-Hacking and Roll V</title><link href="http://0.0.0.0/2018/05/19/hnrv.html" rel="alternate" type="text/html" title="WriteUp-Hacking and Roll V" /><published>2018-05-19T00:00:00+00:00</published><updated>2018-05-19T00:00:00+00:00</updated><id>http://0.0.0.0/2018/05/19/hnrv</id><content type="html" xml:base="http://0.0.0.0/2018/05/19/hnrv.html">&lt;p&gt;Hacking And Roll V&lt;/p&gt;
+
+&lt;p&gt;Er, então, essa é a writeup e eu inventei esse termo agora mas já deveria existir antes, jogamos(Unit1337) o HNRV, foi um evento de 24h começando as 13:37 de sábado. Nosso ápice foi o 3º lugar que alcançamos por volta de umas 5h da manhã, mas fomos ultrapassados e finalizamos o campeonato em 5º. Foi o primeiro CTF oficial da Unit1337, eu achei que seriamos massacrados mas não foi tão ruim. Bom, vamos aos bag técnico.
+Write Ups&lt;/p&gt;
+
+&lt;p&gt;Segue abaixo as writeups das challenges que resolvemos.
+Misc
+Quanto tempo, amigos?(100)&lt;/p&gt;
+
+&lt;p&gt;A chall que abriu o evento era da categoria MISC que para os que gostam de Senhor dos Anéis. A flag estava escrita na imagem, depois de obviamente ter googlado a frase e lido na wikifuckingpedia: “Fale, amigo, e entre.” A senha para que os portões se abrissem era “mellon”.&lt;/p&gt;
+
+&lt;h6 id=&quot;a-poeam200&quot;&gt;A Poeam(200)&lt;/h6&gt;
+&lt;p&gt;Essa aqui foi trash pra entender, mas alguma deixas no poema que eu achei muito bom, segue:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a couple of lovers for demonstrate their infatuation with a simple method of a combination
+
+they will be in synchrony like in a momentary synergy
+
+the boy will produce flowers the girl will reap them with some desires
+
+they were working well until chaos came and blew it all to hell
+
+the couple are sleeping and sleeping they will be for today tomorrow and eternity
+
+what did you expect? our couple are just threads
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Ele faz referência a threads, e algo de ruim aconteceu ao sincronismo entre duas threads, isso me levou a pensar em starvation e deadlock, mas ali diz que elas dormiram para sempre, então eu tentei “deadlock” e a flag foi ownada.
+Script Rules(300)&lt;/p&gt;
+
+&lt;p&gt;“Melhor” chall do evento, na minha opinião(VandalVNL). Utilizei python com as bibliotecas hashlib e os. Segue o código que montei para a resolução&lt;/p&gt;
+
+&lt;p&gt;import os
+import hashlib
+hash_numero = {}
+arquivo = {}
+def get_value_from_file(path):
+    return open(path, ‘r’).readlines()
+for numero in range(1,665):
+    hash_numero.update(
+        {hashlib.sha1(str.encode(str(numero))).hexdigest():numero}
+    )
+    arquivo.update(
+        {numero:hashlib.sha1(str.encode(str(numero))).hexdigest()}
+    )
+resposta = []
+for numero in range(1, 665):
+    try:
+        resposta.append(get_value_from_file(
+                arquivo.get(
+                hash_numero.get(
+                    arquivo.get(numero)
+                )
+        )))
+    except:
+        continue
+for flag in resposta:
+    print(flag,end=’’)”&lt;/p&gt;
+
+&lt;p&gt;Lógico, para executar este script, você deve estar dentro da pasta com todos os arquivos em formato de hash. E só lembrando que os hashs são Sha1 e o valor dos hashs está entre 1 e 665(caso você não entenda bem sobre programação e não tenha lido o script).
+Forensics&lt;/p&gt;
+
+&lt;h6 id=&quot;domum100&quot;&gt;Domum(100)&lt;/h6&gt;
+&lt;p&gt;Nessa questão, apenas jogar o link da imagem no Google iria nos retornar informações para resolver a flag. É citado o fotógrafo Herbert List e uma coleção de álbuns, um deles cita “Italy. Sicily. Tuna fishing” e a cidade favignana, que é a flag.
+Wallpaper(200)&lt;/p&gt;
+
+&lt;p&gt;A challenge era essa imagem, a flag estava oculta e tinha que ir alterando a “saturação” da imagem, invertendo as cores e então ela ficava visivel.
+Xereta((300)&lt;/p&gt;
+
+&lt;p&gt;Apenas uma análise a banco de dados SQLite3. Como o banco era bem grandinho, utilizei o ‘DB Browser for SQLite’ para resolver. Na linha 163 continha um link para um Mega, mas com uma senha que estava ainda no banco, na linha 165. Abrindo o link com a senha encontrada, podemos baixar uma planilha que está com a flag ridiculamente exposta, apenas capture.
+Crypto&lt;/p&gt;
+
+&lt;h6 id=&quot;hercules300&quot;&gt;Hercules(300)&lt;/h6&gt;
+&lt;p&gt;Na imagem dá pra notar que é grego. Com preguiça de transcrever, utilizamos um serviço de OCR Online e depois o Google Tradutor fez o resto.
+Polska(200)&lt;/p&gt;
+
+&lt;p&gt;Está cripto eu tive a ajuda do site Vigenere Brute que fez um bruteforce com as possíveis chaves para a cifra. Deixei um tempo rodando e acabei recebendo 500 resultados. Para capturar a flag, apenas dei um grep em ‘hnrv’ e achei no primeiro resultado, somente colocando a flag no padrão, pois o texto estava todo junto.
+Reverse Eng.&lt;/p&gt;
+
+&lt;h6 id=&quot;pointer100&quot;&gt;Pointer(100)&lt;/h6&gt;
+
+&lt;p&gt;Essa de engenharia reversa eu fiquei meio merda pois não conseguia entender aonde tava a flag no código, eu tinha um binário e um txt. No txt tinha várias frases e no binário eu supostamente passava uma linha do txt pro binário. E na verdade a flag era uma linha desse txt. Porém eu não sabia e fiquei tentando debugar o código tentando dumpar as variáveis e analisar o assembly pra ver se tinha algo que não era chamado. Acontece que tinha um hint dentro desse binário: “defcon calvin”&lt;/p&gt;
+
+&lt;p&gt;Depois de um googlin eu encontrei isso:http://nopsr.us/ctf2006prequal/walk-binary.html Basicamente peguei a writeup da defcon e adptei pro binário da challenge do HNRV e descobri qual era a linha que tinha a flag atráves do offsec (data).&lt;/p&gt;
+
+&lt;p&gt;E descobri também que era sou(d34dr3b3l) 0 à esquerda em reverse, eu até cheguei a analisar a segunda challenge de reverse mas não consegui ownar, porém vou continuar tentando ownar ela e caso eu role eu atualizo aqui.
+Web
+Always Somewhere(100)&lt;/p&gt;
+
+&lt;p&gt;Essa challenge foi basicamente explorar o indexes, no diretório /img se não me engano e lá tinha dois arquivos, um deles tinha o nome praticamente igual com exceção do final ter um _1.jpeg. Eu baixei o arquivo e abri e a flag estava lá.&lt;/p&gt;
+
+&lt;h6 id=&quot;noble-task200&quot;&gt;Noble Task(200)&lt;/h6&gt;
+&lt;p&gt;Esse desafio foi louco, no site tinha um robots.txt que dava em dois arquivos, um deles continha as credenciais e o outro era a área restrita do website. Porém não dava para logar, depois de certo tempo, voltei a analisar os arquivos e sem ideia comecei a pesquisar sobre o login “lipemob” nas redes socais devido a hints da staff do evento. Eu pensei em codar um script em python mas achei que ia ser perda de tempo, fiz manual com uma dork, eu só ia substituindo o “site” pela rede social de uma lista que eu elaborei, o engraçado é que eu tive que googlar “redes sociais” porquê não conheço todas, KK vi que uma delas é a rede social do baidu(?), mas voltando ao assunto, dork segue abaixo:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;site:github.com intext:’lipemob’&lt;/td&gt;
+      &lt;td&gt;site:github.com intext:’Jebb’ +’Filipi’&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Acabou que eu encontrei no tumblr eu não ia procurar mas achei estranho a cultura que notei pelo perfil do usuário e fui indo no histórico, e encontrei algo do ano passado postado, era um vídeo pro youtube e tinha umas tags que ligavam no HNRV, então uma delas era assim “#referer”, então foi simples. Peguei o link do youtube e coloquei como referer e tentei logar na área restrita e capturei a flag.&lt;/p&gt;
+
+&lt;p&gt;Acredito que foram só essas, ficamos 900 pontos atrás do 4 colocado que também era o terceiro colocado pois era a mesma equipe mas os caras jogam com 10 pessoas. Vamos ver se movimentamos mais na cena de CTF com a Unit1337, em breve mais writeups newbies, continue ligado.&lt;/p&gt;
+
+&lt;p&gt;EOF&lt;/p&gt;</content><author><name>Karlo Espiritu</name></author><summary type="html">Hacking And Roll V Er, então, essa é a writeup e eu inventei esse termo agora mas já deveria existir antes, jogamos(Unit1337) o HNRV, foi um evento de 24h começando as 13:37 de sábado. Nosso ápice foi o 3º lugar que alcançamos por volta de umas 5h da manhã, mas fomos ultrapassados e finalizamos o campeonato em 5º. Foi o primeiro CTF oficial da Unit1337, eu achei que seriamos massacrados mas não foi tão ruim. Bom, vamos aos bag técnico. Write Ups Segue abaixo as writeups das challenges que resolvemos. Misc Quanto tempo, amigos?(100) A chall que abriu o evento era da categoria MISC que para os que gostam de Senhor dos Anéis. A flag estava escrita na imagem, depois de obviamente ter googlado a frase e lido na wikifuckingpedia: “Fale, amigo, e entre.” A senha para que os portões se abrissem era “mellon”. A Poeam(200) Essa aqui foi trash pra entender, mas alguma deixas no poema que eu achei muito bom, segue: a couple of lovers for demonstrate their infatuation with a simple method of a combination they will be in synchrony like in a momentary synergy the boy will produce flowers the girl will reap them with some desires they were working well until chaos came and blew it all to hell the couple are sleeping and sleeping they will be for today tomorrow and eternity what did you expect? our couple are just threads Ele faz referência a threads, e algo de ruim aconteceu ao sincronismo entre duas threads, isso me levou a pensar em starvation e deadlock, mas ali diz que elas dormiram para sempre, então eu tentei “deadlock” e a flag foi ownada. Script Rules(300) “Melhor” chall do evento, na minha opinião(VandalVNL). Utilizei python com as bibliotecas hashlib e os. Segue o código que montei para a resolução import os import hashlib hash_numero = {} arquivo = {} def get_value_from_file(path): return open(path, ‘r’).readlines() for numero in range(1,665): hash_numero.update( {hashlib.sha1(str.encode(str(numero))).hexdigest():numero} ) arquivo.update( {numero:hashlib.sha1(str.encode(str(numero))).hexdigest()} ) resposta = [] for numero in range(1, 665): try: resposta.append(get_value_from_file( arquivo.get( hash_numero.get( arquivo.get(numero) ) ))) except: continue for flag in resposta: print(flag,end=’’)” Lógico, para executar este script, você deve estar dentro da pasta com todos os arquivos em formato de hash. E só lembrando que os hashs são Sha1 e o valor dos hashs está entre 1 e 665(caso você não entenda bem sobre programação e não tenha lido o script). Forensics Domum(100) Nessa questão, apenas jogar o link da imagem no Google iria nos retornar informações para resolver a flag. É citado o fotógrafo Herbert List e uma coleção de álbuns, um deles cita “Italy. Sicily. Tuna fishing” e a cidade favignana, que é a flag. Wallpaper(200) A challenge era essa imagem, a flag estava oculta e tinha que ir alterando a “saturação” da imagem, invertendo as cores e então ela ficava visivel. Xereta((300) Apenas uma análise a banco de dados SQLite3. Como o banco era bem grandinho, utilizei o ‘DB Browser for SQLite’ para resolver. Na linha 163 continha um link para um Mega, mas com uma senha que estava ainda no banco, na linha 165. Abrindo o link com a senha encontrada, podemos baixar uma planilha que está com a flag ridiculamente exposta, apenas capture. Crypto Hercules(300) Na imagem dá pra notar que é grego. Com preguiça de transcrever, utilizamos um serviço de OCR Online e depois o Google Tradutor fez o resto. Polska(200) Está cripto eu tive a ajuda do site Vigenere Brute que fez um bruteforce com as possíveis chaves para a cifra. Deixei um tempo rodando e acabei recebendo 500 resultados. Para capturar a flag, apenas dei um grep em ‘hnrv’ e achei no primeiro resultado, somente colocando a flag no padrão, pois o texto estava todo junto. Reverse Eng. Pointer(100) Essa de engenharia reversa eu fiquei meio merda pois não conseguia entender aonde tava a flag no código, eu tinha um binário e um txt. No txt tinha várias frases e no binário eu supostamente passava uma linha do txt pro binário. E na verdade a flag era uma linha desse txt. Porém eu não sabia e fiquei tentando debugar o código tentando dumpar as variáveis e analisar o assembly pra ver se tinha algo que não era chamado. Acontece que tinha um hint dentro desse binário: “defcon calvin” Depois de um googlin eu encontrei isso:http://nopsr.us/ctf2006prequal/walk-binary.html Basicamente peguei a writeup da defcon e adptei pro binário da challenge do HNRV e descobri qual era a linha que tinha a flag atráves do offsec (data). E descobri também que era sou(d34dr3b3l) 0 à esquerda em reverse, eu até cheguei a analisar a segunda challenge de reverse mas não consegui ownar, porém vou continuar tentando ownar ela e caso eu role eu atualizo aqui. Web Always Somewhere(100) Essa challenge foi basicamente explorar o indexes, no diretório /img se não me engano e lá tinha dois arquivos, um deles tinha o nome praticamente igual com exceção do final ter um _1.jpeg. Eu baixei o arquivo e abri e a flag estava lá. Noble Task(200) Esse desafio foi louco, no site tinha um robots.txt que dava em dois arquivos, um deles continha as credenciais e o outro era a área restrita do website. Porém não dava para logar, depois de certo tempo, voltei a analisar os arquivos e sem ideia comecei a pesquisar sobre o login “lipemob” nas redes socais devido a hints da staff do evento. Eu pensei em codar um script em python mas achei que ia ser perda de tempo, fiz manual com uma dork, eu só ia substituindo o “site” pela rede social de uma lista que eu elaborei, o engraçado é que eu tive que googlar “redes sociais” porquê não conheço todas, KK vi que uma delas é a rede social do baidu(?), mas voltando ao assunto, dork segue abaixo: site:github.com intext:’lipemob’ site:github.com intext:’Jebb’ +’Filipi’ Acabou que eu encontrei no tumblr eu não ia procurar mas achei estranho a cultura que notei pelo perfil do usuário e fui indo no histórico, e encontrei algo do ano passado postado, era um vídeo pro youtube e tinha umas tags que ligavam no HNRV, então uma delas era assim “#referer”, então foi simples. Peguei o link do youtube e coloquei como referer e tentei logar na área restrita e capturei a flag. Acredito que foram só essas, ficamos 900 pontos atrás do 4 colocado que também era o terceiro colocado pois era a mesma equipe mas os caras jogam com 10 pessoas. Vamos ver se movimentamos mais na cena de CTF com a Unit1337, em breve mais writeups newbies, continue ligado. EOF</summary></entry></feed>
