@@ -4,8 +4,8 @@ highlighter:      rouge
 
 # Setup
 title:            Unit1337
-tagline:          HackerSpace
-description:      "HackerSpace"
+tagline:          HackerSpace|CTF_Team
+description:      "HackerSpace | CTF Team"
 url:              https://unit1337.github.io
 baseurl:          /
                   # the optional subpath of your site, e.g. "/my-jekyll-site/"

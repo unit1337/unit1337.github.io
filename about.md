@@ -13,6 +13,9 @@ Mais informações sobre o projeto, acesse esse <a href='{{ site.baseurl }}0utfl
 ### CTF Team
 Nosso esquadrão Unit1337 também participa ativamente de campeonatos de CTF pelo planeta. Um fato curioso é que esses soldados podem passar noites em claro e até mesmo sob privação de alimentos para conseguir completar o objetivo, capturar a bandeira!
 
+### m337
+Pseudos meetups para troca de conhecimento, divulgação das datas ocorrem no nosso twitter e, tentamos escrever os papers dos tópicos nos eventos aqui pro blog, fique ligado!
+
 ### Team
 Nossa equipe é composta por:
 - THX1338
